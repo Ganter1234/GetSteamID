@@ -1,16 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>   
     <TargetFramework>net7.0</TargetFramework>
     <Platforms>AnyCPU;x86</Platforms>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="CounterStrikeSharp.API">
-      <HintPath>..\CounterStrikeSharp.API.dll</HintPath>
+    <Reference Include="C:\Users\vital\Desktop\Разное\Скриптинг\Скриптинг CS2 (csharp)\managed\CounterStrikeSharp.API.dll">
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
 </Project>

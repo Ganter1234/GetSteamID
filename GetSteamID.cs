@@ -1,21 +1,17 @@
-﻿using System;
-using CounterStrikeSharp.API;
-using CounterStrikeSharp.API.Core;
+﻿using CounterStrikeSharp.API.Core;
 using CounterStrikeSharp.API.Core.Attributes.Registration;
 using CounterStrikeSharp.API.Modules.Commands;
-using CounterStrikeSharp.API.Modules.Memory;
-using CounterStrikeSharp.API.Modules.Menu;
 using CounterStrikeSharp.API.Modules.Utils;
 using CounterStrikeSharp.API.Modules.Entities;
 
 namespace GetSteamID;
-public class GetSteamID : BasePlugin
+public class GSID : BasePlugin
 {
     public override string ModuleName => "Get SteamID";
     public override string ModuleVersion => "1.0.0";
     public override string ModuleAuthor => "Ganter1234";
 
-    [ConsoleCommand("steam", "Get your SteamID")]
+    [ConsoleCommand("steam", "Get your SteamID")] 
     public void SteamCommand(CCSPlayerController? player, CommandInfo command)
     {
         if(player != null && player.PlayerPawn != null && player.PlayerPawn.IsValid)
